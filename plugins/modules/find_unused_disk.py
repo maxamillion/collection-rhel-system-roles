@@ -64,7 +64,7 @@ import os
 import re
 
 from ansible.module_utils.basic import AnsibleModule
-from ansible.module_utils.size import Size
+from ansible_collections.redhat.rhel_system_roles.plugins.module_utils.size import Size
 
 
 SYS_CLASS_BLOCK = "/sys/class/block/"

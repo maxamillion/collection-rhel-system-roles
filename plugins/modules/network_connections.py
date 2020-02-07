@@ -9,18 +9,18 @@ import time
 import traceback
 
 # pylint: disable=import-error, no-name-in-module
-from ansible.module_utils.network_lsr import MyError
+from ansible_collections.redhat.rhel_system_roles.plugins.module_utils.network_lsr import MyError
 
 # pylint: disable=import-error
-from ansible.module_utils.network_lsr.argument_validator import (
+from ansible_collections.redhat.rhel_system_roles.plugins.module_utils.network_lsr.argument_validator import (
     ArgUtil,
     ArgValidator_ListConnections,
     ValidationError,
 )
 
 # pylint: disable=import-error
-from ansible.module_utils.network_lsr.utils import Util
-from ansible.module_utils.network_lsr import nm_provider
+from ansible_collections.redhat.rhel_system_roles.plugins.module_utils.network_lsr.utils import Util
+from ansible_collections.redhat.rhel_system_roles.plugins.module_utils.network_lsr import nm_provider
 
 DOCUMENTATION = """
 ---
