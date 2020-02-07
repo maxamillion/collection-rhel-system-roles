@@ -20,7 +20,7 @@
   when: timesync_mode is not defined
 
 - name: Determine current NTP provider
-  timesync_provider:
+  redhat.rhel_system_roles.timesync_provider:
   when:
     - timesync_mode != 2
     - timesync_ntp_provider == ''

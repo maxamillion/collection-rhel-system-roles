@@ -48,7 +48,7 @@
     - network_provider == "initscripts"
 
 - name: Configure networking connection profiles
-  network_connections:
+  redhat.rhel_system_roles.network_connections:
     provider: "{{ network_provider | mandatory }}"
     ignore_errors: "{{ network_ignore_errors | default(omit) }}"
     force_state_change: "{{ network_force_state_change | default(omit) }}"

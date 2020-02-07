@@ -32,8 +32,8 @@ and a list of mounts to manage using ansible's built-in `mount` module.
 The `bsize` module translates human-readable size specifications into a
 flexible format.
 
-The `blockdev_info` module gathers information about the storage devices in the
-system, and is only used for test result validation.
+The `redhat.rhel_system_roles.blockdev_info` module gathers information about the
+torage devices in the system, and is only used for test result validation.
 
 The `find_unused_disk` module lists unused disks that match a set of user-
 provided constraints.

@@ -86,7 +86,7 @@
     var: _storage_volumes
 
 - name: get required packages
-  blivet:
+  redhat.rhel_system_roles.blivet:
     pools: "{{ _storage_pools }}"
     volumes: "{{ _storage_volumes }}"
     use_partitions: "{{ storage_use_partitions }}"
@@ -100,7 +100,7 @@
     state: present
 
 - name: manage the pools and volumes to match the specified state
-  blivet:
+  redhat.rhel_system_roles.blivet:
     pools: "{{ _storage_pools }}"
     volumes: "{{ _storage_volumes }}"
     use_partitions: "{{ storage_use_partitions }}"

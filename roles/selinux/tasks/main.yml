@@ -122,7 +122,7 @@
   with_items: "{{ selinux_ports }}"
 
 - name: Set linux user to SELinux user mapping
-  selogin:
+  redhat.rhel_system_roles.selogin:
     login: "{{ item.login }}"
     seuser: "{{ item.seuser }}"
     serange: "{{ item.serange | default('s0') }}"
