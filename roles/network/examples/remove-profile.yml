@@ -1,1 +1,10 @@
-../tests/remove-profile.yml
+# SPDX-License-Identifier: BSD-3-Clause
+---
+- name: Remove {{ profile }}
+  hosts: all
+  vars:
+    network_connections:
+      - name: "{{ profile }}"
+        persistent_state: absent
+  roles:
+    - redhat.rhel_system_roles.network

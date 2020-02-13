@@ -23,4 +23,4 @@
             - 198.51.100.133/30
 
   roles:
-    - linux-system-roles.network
+    - redhat.rhel_system_roles.network

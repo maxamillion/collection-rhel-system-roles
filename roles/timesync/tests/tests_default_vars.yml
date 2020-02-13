@@ -5,7 +5,7 @@
   tasks:
     - block:
         - import_role:
-            name: linux-system-roles.timesync
+            name: redhat.rhel_system_roles.timesync
           when: false
 
         - assert:

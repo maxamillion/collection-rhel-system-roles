@@ -13,7 +13,7 @@
 
     # create test profile
     - include_role:
-        name: linux-system-roles.network
+        name: redhat.rhel_system_roles.network
       vars:
         network_connections:
           - name: statebr
@@ -28,7 +28,7 @@
     # test case (remove profile but keep it up)
     # I can remove a profile but keep the configuration active.
     - include_role:
-        name: linux-system-roles.network
+        name: redhat.rhel_system_roles.network
       vars:
         network_connections:
           - name: statebr
@@ -40,7 +40,7 @@
     # I can set a profile down that is up and absent.
     - name: Set down
       include_role:
-        name: linux-system-roles.network
+        name: redhat.rhel_system_roles.network
       vars:
         network_connections:
           - name: statebr

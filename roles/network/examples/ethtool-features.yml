@@ -3,7 +3,7 @@
 - hosts: all
   tasks:
     - include_role:
-        name: linux-system-roles.network
+        name: redhat.rhel_system_roles.network
       vars:
         network_connections:
           - name: "{{ network_interface_name1 }}"

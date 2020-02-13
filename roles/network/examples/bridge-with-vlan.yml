@@ -33,4 +33,4 @@
             - "192.0.2.{{ network_iphost }}/24"
 
   roles:
-    - linux-system-roles.network
+    - redhat.rhel_system_roles.network

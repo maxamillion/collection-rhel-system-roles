@@ -15,7 +15,7 @@
       debug:
         msg: "##################################################"
     - import_role:
-        name: linux-system-roles.network
+        name: redhat.rhel_system_roles.network
       vars:
         network_connections:
           - name: "{{ interface }}"
@@ -51,7 +51,7 @@
       debug:
         msg: "##################################################"
     - import_role:
-        name: linux-system-roles.network
+        name: redhat.rhel_system_roles.network
       vars:
         network_connections:
           - name: "{{ interface }}"

@@ -3,4 +3,4 @@
   hosts: all
 
   roles:
-    - linux-system-roles.timesync
+    - redhat.rhel_system_roles.timesync

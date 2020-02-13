@@ -32,7 +32,7 @@
       - ntp
 
   - include_role:
-      name: linux-system-roles.timesync
+      name: redhat.rhel_system_roles.timesync
     vars:
       # ntp is the default choice for RedHat and CentOS version < 7.0 - reverse it
       timesync_ntp_provider: "{{ 'chrony' if is_ntp_default else 'ntp' }}"
@@ -54,7 +54,7 @@
       - not is_ntp_default
 
   - include_role:
-      name: linux-system-roles.timesync
+      name: redhat.rhel_system_roles.timesync
     vars:
       timesync_ntp_provider: "{{ timesync_ntp_provider_os_default }}"
 

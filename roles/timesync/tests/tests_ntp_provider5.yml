@@ -6,7 +6,7 @@
       - hostname: 172.16.123.1
     timesync_ntp_provider: ntp
   roles:
-    - linux-system-roles.timesync
+    - redhat.rhel_system_roles.timesync
 
   pre_tasks:
     - name: Install ntp

@@ -14,7 +14,7 @@
     timesync_step_threshold: 0.0001
     timesync_min_sources: 2
   roles:
-    - linux-system-roles.timesync
+    - redhat.rhel_system_roles.timesync
 
   tasks:
     - meta: flush_handlers

@@ -15,4 +15,4 @@
         mtu: 1450
 
   roles:
-    - linux-system-roles.network
+    - redhat.rhel_system_roles.network

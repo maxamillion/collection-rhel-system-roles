@@ -24,7 +24,7 @@
           dhcp4: no
           auto6: yes
   roles:
-    - linux-system-roles.network
+    - redhat.rhel_system_roles.network
 
 - import_playbook: run-tasks.yml
   vars:

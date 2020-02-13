@@ -36,7 +36,7 @@
         ip:
           address: 192.0.2.1/24
   roles:
-    - linux-system-roles.network
+    - redhat.rhel_system_roles.network
 
 - hosts: all
   tasks:
